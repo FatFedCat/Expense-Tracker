@@ -7,22 +7,49 @@
   <link rel="stylesheet" href="../styles/main.css">
 </head>
 <body>
-  <header class="site-header" id="site-header">
-    <div class="container site-header-inner">
-      <a class="site-header-logo" id="site-logo" href="../index.html">Expense Tracker</a>
-    </div>
-  </header>
 
   <main class="container page" id="login-main">
-    <h1>Вход</h1>
-    <p>Контент страницы будет позже добавлен</p>
-    <a href="calculator.html">Калькулятор</a>
-  </main>
 
-  <footer class="site-footer" id="site-footer">
-    <div class="container site-footer-inner">
-      <p>Expense Tracker - приложение для управления финансами</p>
+    <div class="login-container">
+      <section class="left-panel-login">
+      
+      </section>
+
+      <section class="login-section">
+        <h2>Вход</h2>
+        <form action="login.html" method="post">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required>
+          <button type="submit">Вход</button>
+        </form>
+        <a href="calculator.html">Продолжить без входа</a>
+      </section>
+      </div>
+
+    <div class="register-container">
+      <section class="left-panel-login">
+        
+      </section>
+
+      <section class="register-section">
+        <h2>Регистрация</h1>
+        <form action="register.html" method="post">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required>
+          <label for="confirm-password">Confirm Password</label>
+          <input type="password" id="confirm-password" name="confirm-password" required>
+          <button type="submit">Регистрация</button>
+        </form>
+        <a href="calculator.html">Продолжить без регистрации</a>
+      </section>
     </div>
-  </footer>
+
+  </main>
 </body>
 </html>
