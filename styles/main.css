@@ -184,7 +184,7 @@ footer {
   align-items: stretch;
   gap: 16px;
   position: relative;
-  padding: 40px 20px 10px 0;
+  padding: 40px 65px 10px 0;
   border: solid 1px var(--color-border);
   border-radius: 2rem;
 }
@@ -205,7 +205,7 @@ footer {
   align-items: stretch;
   gap: 16px;
   position: relative;
-  padding: 40px 20px 10px 0;
+  padding: 40px 65px 10px 0;
   border: solid 1px var(--color-border);
   border-radius: 2rem;
 }
