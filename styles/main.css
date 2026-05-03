@@ -432,8 +432,7 @@ footer {
 
 .diagram-analystics,
 .number-analystics,
-.text-analystics,
-.button-analystics {
+.text-analystics {
   border: 1px solid var(--color-border);
   border-radius: 10px;
   padding: 12px;
@@ -442,6 +441,7 @@ footer {
 .button-analystics {
   display: flex;
   justify-content: center;
+  padding: 12px;
 }
 
 .button-analystics button {
@@ -449,10 +449,4 @@ footer {
   height: 38px;
   border: 1px solid var(--color-border);
   border-radius: 8px;
-}
-
-@media (max-width: 900px) {
-  .calculator-container {
-    grid-template-columns: 1fr;
-  }
 }
