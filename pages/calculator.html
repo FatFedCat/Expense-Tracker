@@ -18,23 +18,63 @@
 
   <main class="container page" id="calculator-main">
 
-    <h1>Калькулятор</h1>
+    <h1 class="calculator-title">Калькулятор</h1>
 
     <div class="calculator-container">
       <div class="calculator-inner">
-        <h2 class="calculator-title">Калькулятор</h2>
-        <div class="calculator-content">\
-          <title></title>
-          <input type="number" id="amount" placeholder="Сумма">
+        <h2 class="calculator-title-inner">Калькулятор</h2>
+        <div class="calculator-content">
+
+          <section class="calculator-section-income">
+            <label for="income">Доход</label>
+            <input type="number" id="income" placeholder="Сумма">
+          </section>
+
+          <section class="calculator-section-expenses">
+            <section class="calculator-buttons">
+              <button type="submit" id="add-expense">+</button>
+              <button type="submit" id="subtract-expense">-</button>
+            </section>
+            <label for="expenses">Расходы</label>
+            <input type="number" id="expenses" placeholder="Сумма">
+            <select name="expenses" id="expenses">
+              <option value="1">Еда</option>
+              <option value="2">Транспорт</option>
+              <option value="3">Жилье</option>
+              <option value="4">Коммунальные услуги</option>
+              <option value="5">Образование</option>
+              <option value="6">Здоровье</option>
+              <option value="7">Развлечения</option>
+              <option value="8">Одежда</option>
+              <option value="9">Другое</option>              
+            </select>
+
+          </section>
+          <button type="submit" id="create-report">Проанализировать</button>
         </div>
       </div>
 
       <div class="analystics-inner">
         <h2 class="analystics-title">Аналитика</h2>
         <div class="analystics-content">
-          <p>Сумма доходов: <span id="income">0</span></p>
-          <p>Сумма расходов: <span id="expenses">0</span></p>
-          <p>Остаток: <span id="balance">0</span></p>
+
+          <section class="diagram-analystics">
+            <p>Тут будет диаграмма</p>
+          </section>
+
+          <section class="number-analystics">
+            <p>Сумма доходов: <span id="income">0</span></p>
+            <p>Сумма расходов: <span id="expenses">0</span></p>
+          </section>
+          
+          <section class="text-analystics">
+            <p>Тут будут даны советы по остатку</p>
+            <p>Остаток: <span id="balance">0</span></p>
+          </section>
+
+          <section class="button-analystics">
+            <button type="submit">Создать отчёт</button>
+          </section>
         </div>
       </div>
     </div>
