@@ -8,46 +8,54 @@
 </head>
 <body>
 
-  <main class="container page" id="login-main">
+  <main class="authentication-page" id="login-main">
 
     <div class="login-container">
-      <section class="left-panel-login">
-      
-      </section>
+      <div class="login-inner">
+        <h2 class="login-title-container">Вход</h2>
+        <section class="left-panel-login">
+          <a href="#" class="login btn-google">Google</a>
+          <a href="#" class="login btn-vk">VK</a>
+          <a href="#" class="login btn-tg">Telegram</a>
+        </section>
 
-      <section class="login-section">
-        <h2>Вход</h2>
-        <form action="login.html" method="post">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
-          <label for="password">Password</label>
-          <input type="password" id="password" name="password" required>
-          <button type="submit">Вход</button>
-        </form>
-        <a href="calculator.html">Продолжить без входа</a>
-      </section>
+        <section class="login-section">
+          <form action="login.html" method="post">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Вход</button>
+          </form>
+          <a href="calculator.html">Продолжить без входа</a>
+        </section>
+        </div>
       </div>
 
     <div class="register-container">
-      <section class="left-panel-login">
-        
-      </section>
+      <div class="register-inner">
+        <h2 class="register-title-container">Регистрация</h2>
+        <section class="left-panel-login">
+          <a href="#" class="register btn-google">Google</a>
+          <a href="#" class="register btn-vk">VK</a>
+          <a href="#" class="register btn-tg">Telegram</a>  
+        </section>
 
-      <section class="register-section">
-        <h2>Регистрация</h1>
-        <form action="register.html" method="post">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required>
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
-          <label for="password">Password</label>
-          <input type="password" id="password" name="password" required>
-          <label for="confirm-password">Confirm Password</label>
-          <input type="password" id="confirm-password" name="confirm-password" required>
-          <button type="submit">Регистрация</button>
-        </form>
-        <a href="calculator.html">Продолжить без регистрации</a>
-      </section>
+        <section class="register-section">
+          <form action="register.html" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+            <button type="submit">Регистрация</button>
+          </form>
+          <a href="calculator.html">Продолжить без регистрации</a>
+        </section>
+      </div>
     </div>
 
   </main>

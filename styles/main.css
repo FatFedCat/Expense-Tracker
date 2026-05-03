@@ -128,9 +128,6 @@ main {
 /* card*/
 
 
-
-
-
 .card-text,
 .card-calc,
 .card-hello {
@@ -160,4 +157,130 @@ footer {
   background-color: var(--color-header);
   padding: 20px 0;
   border-top: 1px solid var(--color-border);
+}
+
+/* login */
+
+.authentication-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.login-container {
+  display: flex;
+  flex: 1;
+  min-height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: solid 1px var(--color-border);
+}
+
+.login-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 16px;
+  position: relative;
+  padding: 40px 20px 10px 0;
+  border: solid 1px var(--color-border);
+  border-radius: 2rem;
+}
+
+.register-container {
+  display: flex;
+  flex: 1;
+  min-height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: solid 1px var(--color-border);
+}
+
+.register-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 16px;
+  position: relative;
+  padding: 40px 20px 10px 0;
+  border: solid 1px var(--color-border);
+  border-radius: 2rem;
+}
+
+.left-panel-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.login-title-container,
+.register-title-container {
+  position: absolute;
+  top: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  text-align: center;
+}
+
+.login-section form,
+.register-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.login-section,
+.register-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.login-section a {
+  margin-top: auto;
+  align-self: center;
+}
+
+.login-section label,
+.register-section label {
+  font-size: 1.1rem;
+  color: var(--color-text);
+}
+
+.login-section input,
+.register-section input {
+  width: 100%;
+  height: 36px;
+  padding: 0 12px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  outline: none;
+}
+
+.login-section button,
+.register-section button {
+  width: 100%;
+  height: 36px;
+  padding: 0 12px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  outline: none;
+}
+
+.login-section a,
+.register-section a {
+  text-decoration: none;
+  color: var(--color-text);
+  padding: 10px;
+  align-self: center;
+  border: 1px solid var(--color-border);
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 20px;
 }
