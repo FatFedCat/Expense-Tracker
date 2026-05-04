@@ -295,6 +295,26 @@ footer {
   margin-top: 20px;
 }
 
+.register-container {
+  display: none;
+}
+
+#register-view:target ~ .login-container {
+  display: none;
+}
+
+#register-view:target ~ .register-container {
+  display: flex;
+}
+
+#login-view:target ~ .login-container {
+  display: flex;
+}
+
+#login-view:target ~ .register-container {
+  display: none;
+}
+
 /* calculator */
 
 .calculator-title {
