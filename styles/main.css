@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: var(--font-text);
 }
 
 :root {
@@ -9,6 +10,8 @@
   --color-header: rgb(255, 255, 255);
   --color-text: rgb(0, 0, 0);
   --color-border: rgba(133, 133, 133, 0.384);
+  --font-logo: 'Playfair Display', serif;
+  --font-text: 'Montserrat', sans-serif;
 }
 button {
   cursor: pointer;
@@ -18,7 +21,6 @@ h1 {
   font-size: 2.5rem;
   font-weight: 600;
 }
-
 body {
   min-height: 100vh;
   display: flex;
@@ -88,7 +90,7 @@ main {
   grid-template-rows: 1fr 1fr;
   gap: 4px;
   min-height: 520px;
-  margin: 4rem;
+  margin: 4rem 4rem 1rem 4rem;
 }
 
 .card-title {
@@ -450,3 +452,5 @@ footer {
   border: 1px solid var(--color-border);
   border-radius: 8px;
 }
+
+/* адаптив */
