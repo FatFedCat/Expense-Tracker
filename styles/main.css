@@ -12,8 +12,11 @@
   --color-border: rgba(133, 133, 133, 0.384);
   --font-logo: 'Playfair Display', serif;
   --font-text: 'Montserrat', sans-serif;
+  --color-hover: rgba(88, 88, 78, 0.151);
+  --color-active: rgba(63, 70, 63, 0.199);
+  --color-button: rgba(88, 88, 77, 0.075);
 }
-button {
+.btn {
   cursor: pointer;
 }
 
@@ -58,6 +61,10 @@ header {
 .site-header_nav a {
   font-size: 1.2rem;
   color: var(--color-text);
+  background-color: var(--color-button);
+  border: 1px solid var(--color-border);
+  border-radius: 50px;
+  padding: 10px;
 }
 
 .site-header-logo{
@@ -157,6 +164,7 @@ main {
   border-radius: 5px;
   padding: 10px;
   margin-top: auto;
+  background-color: var(--color-button);
 }
 
 
@@ -281,6 +289,7 @@ footer {
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 6px;
   outline: none;
+  background-color: var(--color-button);
 }
 
 .login-section a,
@@ -293,6 +302,7 @@ footer {
   border-radius: 5px;
   padding: 10px;
   margin-top: 20px;
+  background-color: var(--color-button);
 }
 
 .register-container {
@@ -355,10 +365,14 @@ footer {
 
 .calculator-section-income,
 .calculator-section-expenses,
-#create-report {
+.btn-analyze {
   border: 1px solid var(--color-border);
   border-radius: 10px;
   padding: 10px;
+}
+
+.btn-analyze {
+  background-color: var(--color-button);
 }
 
 .calculator-section-income,
@@ -395,7 +409,7 @@ footer {
 .calculator-buttons button {
   padding: 5px 10px;
   border: none;
-  background-color: var(--color-background);
+  background-color: var(--color-button);
 }
 
 .calculator-section-income input,
@@ -421,6 +435,7 @@ footer {
 .calculator-section-expenses button {
   height: 34px;
   border: 1px solid var(--color-border);
+  background-color: var(--color-button);
   border-radius: 8px;
 }
 
@@ -470,6 +485,7 @@ footer {
   min-width: 160px;
   height: 38px;
   border: 1px solid var(--color-border);
+  background-color: var(--color-button);
   border-radius: 8px;
 }
 
@@ -542,3 +558,10 @@ footer {
 }
 
 /*всякая красота*/
+
+.btn:hover {
+  background-color: var(--color-hover);
+}
+.btn:active {
+  background-color: var(--color-active);
+}
