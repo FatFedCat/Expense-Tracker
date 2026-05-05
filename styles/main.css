@@ -474,3 +474,71 @@ footer {
 }
 
 /* адаптив */
+
+@media (max-width: 1024px) {
+
+  .site-header_nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .site-header_nav a {
+    font-size: 1rem;
+  }
+  .calculator-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .site-header-inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  .site-header_nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .site-header_nav a {
+    font-size: 1rem;
+  }
+  .site-header_nav a {
+    font-size: 1rem;
+  }
+  .calculator-container {
+    grid-template-columns: 1fr;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+  .card-hello {
+    border-radius: 2rem 2rem 0 0;
+  }
+  .card-helper {
+    border-radius: 0;
+  }
+  .card-calc {
+    border-radius: 0 0 2rem 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-header-inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  .site-header_nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .site-header_nav a {
+    font-size: 1rem;
+  }
+  .calculator-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*всякая красота*/
