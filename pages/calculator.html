@@ -23,7 +23,7 @@
     </div>
   </header>
 
-  <main class="container page" id="calculator-main">
+  <main class="container page" id="calculator-main" data-testid="calculator-page">
 
     <h1 class="calculator-title">Калькулятор</h1>
 
@@ -33,18 +33,18 @@
         <div class="calculator-content">
 
           <section class="calculator-section-income">
-            <label for="income">Доход</label>
-            <input type="number" id="income" placeholder="Сумма">
+            <label for="income-input">Доход</label>
+            <input type="number" id="income-input" placeholder="Сумма" data-testid="income-input">
           </section>
 
           <section class="calculator-section-expenses">
             <section class="calculator-buttons">
-              <button type="submit" id="add-expense" class="btn">+</button>
-              <button type="submit" id="subtract-expense" class="btn">-</button>
+              <button type="submit" id="add-expense" class="btn" data-testid="add-expense-button">+</button>
+              <button type="submit" id="subtract-expense" class="btn" data-testid="subtract-expense-button">-</button>
             </section>
-            <label for="expenses">Расходы</label>
-            <input type="number" id="expenses" placeholder="Сумма">
-            <select name="expenses" id="expenses">
+            <label for="expenses-input">Расходы</label>
+            <input type="number" id="expenses-input" placeholder="Сумма" data-testid="expenses-input">
+            <select name="expense-category" id="expense-category-select" data-testid="expense-category-select">
               <option value="1">Еда</option>
               <option value="2">Транспорт</option>
               <option value="3">Жилье</option>
@@ -57,7 +57,7 @@
             </select>
 
           </section>
-          <button type="submit" id="create-report" class="btn btn-analyze">Проанализировать</button>
+          <button type="submit" id="create-report" class="btn btn-analyze" data-testid="analyze-button">Проанализировать</button>
         </div>
       </div>
 
@@ -70,17 +70,17 @@
           </section>
 
           <section class="number-analystics">
-            <p>Сумма доходов: <span id="income">0</span></p>
-            <p>Сумма расходов: <span id="expenses">0</span></p>
+            <p>Сумма доходов: <span id="income-total" data-testid="income-total">0</span></p>
+            <p>Сумма расходов: <span id="expenses-total" data-testid="expenses-total">0</span></p>
           </section>
           
           <section class="text-analystics">
             <p>Тут будут даны советы по остатку</p>
-            <p>Остаток: <span id="balance">0</span></p>
+            <p>Остаток: <span id="balance-total" data-testid="balance-total">0</span></p>
           </section>
 
           <section class="button-analystics">
-            <button type="submit" class="btn">Создать отчёт</button>
+            <button type="submit" class="btn" data-testid="create-report-button">Создать отчёт</button>
           </section>
         </div>
       </div>
